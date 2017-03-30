@@ -8,9 +8,9 @@ Official releases of this add-on are available at Vaadin Directory. For Maven in
 
 ## Building and running demo
 
-git clone https://github.com/alwi1982/PasswordFieldExtension
-mvn clean install
-cd demo
+git clone https://github.com/alwi1982/PasswordFieldExtension <br>
+mvn clean install <br>
+cd demo <br>
 mvn jetty:run
 
 To see the demo, navigate to http://localhost:8080/
@@ -77,23 +77,23 @@ PasswordFieldExtension is written by Alexander Witt
 Here is a simple example on how to try out the add-on component:
 
 PasswordFieldExtension passwordFieldExtension = new PasswordFieldExtension();
-passwordFieldExtension.setCaption("<b>Password field caption</b>");
+passwordFieldExtension.setCaption("\<b>Password field caption\</b>");
 
-passwordFieldExtension.setMinimumRequirement(true); // default false; first switch on then change text 
-passwordFieldExtension.setMinimumRequirementCaption("Minimum requirement"); 
-// Minimum requirement is 8 letters, 1 upper case, 1 lower case, 1 digit and 1 special char. 
-passwordFieldExtension.setMinimumRequirementText("8 letters<br>1 upper case<br>1 lower case<br>1 digit<br>1 special char");
+passwordFieldExtension.setMinimumRequirement(true); // default false; first switch on then change text <br>
+passwordFieldExtension.setMinimumRequirementCaption("Minimum requirement"); <br>
+// Minimum requirement is 8 letters, 1 upper case, 1 lower case, 1 digit and 1 special char. <br>
+passwordFieldExtension.setMinimumRequirementText("8 letters\<br>1 upper case\<br>1 lower case\<br>1 digit\<br>1 special char");
 
-passwordFieldExtension.setPasswordStrengthText(true); // default true 
-passwordFieldExtension.setPasswordWeakText("weak"); 
-passwordFieldExtension.setPasswordMiddleText("middle"); 
-passwordFieldExtension.setPasswordStrongText("strong"); 
+passwordFieldExtension.setPasswordStrengthText(true); // default true <br>
+passwordFieldExtension.setPasswordWeakText("weak"); <br>
+passwordFieldExtension.setPasswordMiddleText("middle"); <br>
+passwordFieldExtension.setPasswordStrongText("strong"); <br>
 passwordFieldExtension.setPasswordStrongestText("strongest");
  
-passwordFieldExtension.setPasswordStrengthResource(true); //default true 
-passwordFieldExtension.setPasswordWeakResource(new ThemeResource("images/weak.png")); 
-passwordFieldExtension.setPasswordMiddleResource(new ThemeResource("images/middle.png")); 
-passwordFieldExtension.setPasswordStrongResource(new ThemeResource("images/strong.png")); 
+passwordFieldExtension.setPasswordStrengthResource(true); //default true <br>
+passwordFieldExtension.setPasswordWeakResource(new ThemeResource("images/weak.png")); <br>
+passwordFieldExtension.setPasswordMiddleResource(new ThemeResource("images/middle.png")); <br>
+passwordFieldExtension.setPasswordStrongResource(new ThemeResource("images/strong.png")); <br>
 passwordFieldExtension.setPasswordStrongestResource(new ThemeResource("images/strongest.png")); 
 
 For a more comprehensive example, see src/test/java/org/vaadin/template/demo/DemoUI.java
